@@ -1,9 +1,5 @@
 package kwic;
 
-/**
- * Hello world!
- *
- */
 public class KWIC
 {
     public static void main( String[] args )

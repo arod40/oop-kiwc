@@ -1,4 +1,4 @@
 package kwic.model;
 
-public class Input {
+public class Input extends Filter{
 }

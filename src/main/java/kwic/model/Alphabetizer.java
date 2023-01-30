@@ -1,4 +1,4 @@
 package kwic.model;
 
-public class Alphabetizer {
+public class Alphabetizer extends Filter {
 }

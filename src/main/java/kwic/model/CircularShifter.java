@@ -1,4 +1,4 @@
 package kwic.model;
 
-public class CircularShifter {
+public class CircularShifter extends Filter{
 }
