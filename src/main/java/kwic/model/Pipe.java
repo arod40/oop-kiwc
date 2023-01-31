@@ -1,5 +1,6 @@
 package kwic.model;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.PipedReader;
 import java.io.PipedWriter;
@@ -18,11 +19,16 @@ public class Pipe {
     }
   }
 
-  public String readLine() {
+  /**
+   * Reads a line on the pipe
+   * @return line read from the pipe, null if none but pipe is still open
+   * @throws EOFException if pipe closes
+   */
+  public String readLine() throws EOFException {
     return "";
   }
 
-  public void writeLine() {
+  public void writeLine(String poll) {
 
   }
 }
