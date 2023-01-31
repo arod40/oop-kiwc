@@ -1,8 +1,11 @@
 package kwic.model;
 
-import java.io.IOException;
-
-public class CircularShifter extends Filter{
+/**
+ * Group data by line, remove words from
+ * start and append to the end until
+ * the keyword is the first index.
+ */
+public class CircularShifter extends Filter {
   public CircularShifter(Pipe input, Pipe output) {
     super(input, output);
   }

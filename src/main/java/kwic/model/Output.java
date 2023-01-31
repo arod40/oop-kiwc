@@ -1,7 +1,13 @@
 package kwic.model;
 
-public class Output extends Filter{
+public class Output extends Filter {
   public Output(Pipe input) {
     super(input, null);
   }
+
+  @Override
+  public void run() {
+
+  }
+
 }

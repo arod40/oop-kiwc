@@ -1,6 +1,6 @@
 package kwic.model;
 
-public class Filter implements  Runnable{
+public class Filter implements Runnable {
   protected Pipe input;
   protected Pipe output;
 
@@ -9,8 +9,15 @@ public class Filter implements  Runnable{
     this.output = output;
   }
 
+  public void start() {
+    Thread t = new Thread(this);
+    t.start();
+  }
+
   @Override
   public void run() {
-    throw new UnsupportedOperationException();
+    throw new UnsupportedOperationException("Calling Filter run");
   }
+
+
 }

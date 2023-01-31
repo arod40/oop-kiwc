@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Input extends Filter{
+public class Input extends Filter {
   private FileInputStream fileInput;
 
   public Input(FileInputStream input, Pipe output){

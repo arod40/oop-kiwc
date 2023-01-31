@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class App
 {
-    public static void main( String[] args ) throws IOException {
-        (new KWIC()).execute(args[1]);
+    public static void main( String[] args ) throws FileNotFoundException {
+        (new KWIC()).execute(args[0]);
     }
 
 }
