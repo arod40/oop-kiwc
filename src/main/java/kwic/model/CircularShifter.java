@@ -1,5 +1,7 @@
 package kwic.model;
 
+import java.io.IOException;
+
 /**
  * Group data by line, remove words from
  * start and append to the end until
