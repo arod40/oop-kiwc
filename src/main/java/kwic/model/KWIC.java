@@ -2,9 +2,10 @@ package kwic.model;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class KWIC {
-  public void execute(String file) throws FileNotFoundException {
+  public void execute(String file) throws IOException {
     Pipe inCS = new Pipe();
     Pipe csAl = new Pipe();
     Pipe alOu = new Pipe();
