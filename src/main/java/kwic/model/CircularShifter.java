@@ -10,8 +10,6 @@ public class CircularShifter extends Filter {
     super(input, output);
   }
 
-  /** Question -> are we searching for only keywords in the title, or doing a full concordance listing
-   *  Every instance of every word? Every instance of the word in the title? etc */
   @Override
   public void run() {
     /*

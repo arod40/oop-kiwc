@@ -7,7 +7,6 @@ public class Filter implements Runnable {
   public Filter(Pipe input, Pipe output){
     this.input = input;
     this.output = output;
-
   }
 
   public void start() {
