@@ -6,10 +6,14 @@ import java.io.PipedWriter;
 import java.util.Scanner;
 
 public class Pipe {
-  private PipedReader reader = new PipedReader();
-  private PipedWriter writer = new PipedWriter();
-  private Scanner scanner = new Scanner(reader);
+  private final PipedReader reader = new PipedReader();
+  private final PipedWriter writer = new PipedWriter();
+  private final Scanner scanner = new Scanner(reader);
 
+  /**
+   * Constructs a pipe and connects the read and write ends
+   * @throws IOException if connection fails
+   */
   public Pipe() throws IOException {
     writer.connect(reader);
   }
@@ -25,7 +29,6 @@ public class Pipe {
 
   /**
    * Writes a line to the pipe
-   * @return line read from the pipe, if any; null if pipe is closed
    * @throws IOException if the underlying PipedWriter does
    */
   public void writeLine(String line) throws IOException {
