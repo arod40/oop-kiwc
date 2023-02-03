@@ -16,8 +16,15 @@ public class Output extends Filter {
   public void run() {
     String line;
     while ((line = input.readLine()) != null) {
-      System.out.println(line);
+      printHighlighted(line);
     }
+  }
+
+  private static void printHighlighted(String line) {
+    String ANSI_START = "\033[31;1m";
+    String ANSI_END = "\033[0m";
+    System.out.println(ANSI_START + line.substring(0, line.indexOf(' ')) + ANSI_END
+            + line.substring(line.indexOf(' ')));
   }
 
 }
